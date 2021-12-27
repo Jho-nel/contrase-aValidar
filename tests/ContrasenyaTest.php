@@ -9,10 +9,10 @@ public $estrellas3="⭐⭐⭐";
 public $estrellas2="⭐⭐";
 public $estrellas1="⭐";
 public function  setUp():void{
-    $this->passP=new Contrasenya("! ");
+    $this->passP=new Contrasenya("!1234rerasa12452523fqdacavfqDSS ");
   
 }
-/*
+
 public function testMD():void{   
      $estadoMD=$this->passP->tamMayorDiez();
      $this->assertEquals(1,$estadoMD);  
@@ -33,7 +33,7 @@ public function testAN():void{
     $estadoAN=$this->passP->alfaNumerico();
     $this->assertSame(1,$estadoAN);   
 }
-*/
+
 public function testValidar(){
     $estadoV=$this->passP->validar();
     if($estadoV==5){
